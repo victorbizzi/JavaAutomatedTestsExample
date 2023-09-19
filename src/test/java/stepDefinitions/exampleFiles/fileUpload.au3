@@ -1,0 +1,6 @@
+#Send("!{TAB}")
+ControlFocus("Abrir", "", "Edit1")
+Sleep(2)
+ControlSetText("Abrir","","Edit1","C:\Users\VictorMelo\Desktop\VictorAutoTestsSaucedemo\VictorAutoTestsSaucedemo\src\test\java\stepDefinitions\exampleFiles\exampleToUploadPDF.pdf")
+Sleep(2)
+ControlClick("Abrir", "", "Button1")
