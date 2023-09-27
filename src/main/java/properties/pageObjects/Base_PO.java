@@ -41,4 +41,9 @@ public class Base_PO {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.DEFAULT_EXPLICT_TIMEOUT));
         wait.until(ExpectedConditions.elementToBeClickable(element)).click();
     }
+    public void elementShoubNotBePresent(WebElement element){
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.DEFAULT_EXPLICT_TIMEOUT));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated((By) element));
+    }
+
 }

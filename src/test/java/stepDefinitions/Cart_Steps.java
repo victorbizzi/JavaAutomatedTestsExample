@@ -25,4 +25,20 @@ public class Cart_Steps extends Base_PO {
     public void the_shopping_cart_badge_should_count() {
         cart_po.ShoppingCartBadgeAppears();
     }
+    @And("I click in Cart Icon")
+    public void i_click_in_cart_icon(){
+        cart_po.clickInCartIcon();
+    }
+    @And("I should be redirected to Cart Page")
+    public void i_should_be_redirected_to_Cart_Page(){
+        cart_po.cartPageValidating();
+    }
+    @And("I click in button to Remove From Cart")
+    public void i_click_in_button_to_Remove_From_Cart(){
+        cart_po.removeProductCart();
+    }
+    @Then("The Shopping_cart_badge should not be displayed")
+    public void the_Shopping_cart_badge_should_not_be_displayed(){
+        cart_po.shopping_cart_badgeShouldNotBeDisplayed();
+    }
 }
