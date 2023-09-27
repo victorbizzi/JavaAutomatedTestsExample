@@ -2,7 +2,6 @@ package properties.pageObjects;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 public class Products_PO extends Base_PO{
     public Products_PO(){
         super();

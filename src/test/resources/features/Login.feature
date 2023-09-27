@@ -25,7 +25,6 @@ Feature: Saucedemo - Login Page Tests
     And I click on the Login button
     Then I should be presented with the following login validation message <loginValidationMessage>
 
-
     Examples:
       | username        | password      | loginValidationMessage                                                        |
       | NonExistent     | secret_sauce  | Epic sadface: Username and password do not match any user in this service     |

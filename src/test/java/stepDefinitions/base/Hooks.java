@@ -8,7 +8,6 @@ import org.openqa.selenium.TakesScreenshot;
 import java.sql.Timestamp;
 import static driver.DriverFactory.cleanupDriver;
 import static driver.DriverFactory.getDriver;
-
 public class Hooks {
     @Before
     public void setup() {
@@ -27,6 +26,5 @@ public class Hooks {
     @After
     public void tearDown() {
         cleanupDriver();
-
     }
 }

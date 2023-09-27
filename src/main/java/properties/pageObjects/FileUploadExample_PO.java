@@ -6,7 +6,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Global_Vars;
 import java.io.IOException;
 import java.time.Duration;
-
 public class FileUploadExample_PO extends Base_PO{
     public FileUploadExample_PO() {
         super();

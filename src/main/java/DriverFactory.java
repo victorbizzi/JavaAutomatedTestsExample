@@ -8,17 +8,14 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-
 public class DriverFactory {
     private static ThreadLocal<WebDriver> webDriver = new ThreadLocal<>();
-
     public static WebDriver getDriver() {
         if (webDriver.get() == null) {
             webDriver.set(createDriver());
         }
         return webDriver.get();
     }
-
     private static WebDriver createDriver() {
         WebDriver driver = null;
 
@@ -41,7 +38,6 @@ public class DriverFactory {
         driver.manage().window().maximize();
         return driver;
     }
-
     private static String getBrowserType() {
         String browserType = null;
         String browserTypeRemoteValue = System.getProperty("browserType");
@@ -60,7 +56,6 @@ public class DriverFactory {
         }
         return browserType;
     }
-
     public static void cleanupDriver() {
         webDriver.get().quit();
         webDriver.remove();

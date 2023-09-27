@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Global_Vars;
 import java.time.Duration;
-
 public class Base_PO {
     public Base_PO(){
         PageFactory.initElements(getDriver(), this);

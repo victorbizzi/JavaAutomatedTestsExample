@@ -5,7 +5,6 @@ import properties.pageObjects.Base_PO;
 import properties.pageObjects.HomePage_PO;
 import properties.pageObjects.Login_PO;
 import properties.pageObjects.Products_PO;
-
 public class Products_Steps extends Base_PO {
     private HomePage_PO homePage_po;
     private Login_PO login_po;

@@ -6,7 +6,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Global_Vars;
 import java.time.Duration;
-
 public class Login_PO extends Base_PO {
     public Login_PO(){
         super();
@@ -37,7 +36,6 @@ public class Login_PO extends Base_PO {
         waitForWebElementAndClick(loginBtn);
     }
     public void waitForAlert_And_ValidateLOGINText(String text){
-
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.DEFAULT_EXPLICT_TIMEOUT));
         wait.until(ExpectedConditions.visibilityOf(errorLoginMessage));
         String elementText = errorLoginMessage.getText();
@@ -51,7 +49,6 @@ public class Login_PO extends Base_PO {
         sendKeys(userNameTxt, username);
         sendKeys(userPasswordTxt, password);
         waitForWebElementAndClick(loginBtn);
-
     }
     public void FirstStepOpenAndLogIn(String username, String password) {
         NavigateToLoginPage();

@@ -7,7 +7,6 @@ import properties.pageObjects.Base_PO;
 import properties.pageObjects.HomePage_PO;
 import properties.pageObjects.Login_PO;
 import utils.Global_Vars;
-
 public class Login_Steps extends Base_PO {
     private HomePage_PO homePage_po;
     private Login_PO login_po;
@@ -35,12 +34,10 @@ public class Login_Steps extends Base_PO {
     public void i_should_be_presented_with_the_following_login_validation_message(String text) {
         login_po.waitForAlert_And_ValidateLOGINText(text);
     }
-
     @Then("I should be Logged in and the Header should present the message Swag Labs")
     public void i_should_be_presented_with_the_following_login_validation_message(){
         homePage_po.validate_SuccessfulSubmissionMessage_Text();
     }
-
     @And("Click in Burger menu to expand the sidebar menu")
     public void click_in_burger_menu_to_expand_the_sidebar_menu() {
         homePage_po.clickOn_BugerMenu();
