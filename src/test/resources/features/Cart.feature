@@ -1,4 +1,4 @@
-@cart @all
+@cart @all @tests
 Feature: Saucedemo - Cart Page Tests
   Background:
     Given I access the Saucedemo Login Page

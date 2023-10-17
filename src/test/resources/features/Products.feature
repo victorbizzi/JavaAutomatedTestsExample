@@ -1,4 +1,4 @@
-@products @all
+@products @all @tests
 Feature: Saucedemo - Products Tests
 
   Background:

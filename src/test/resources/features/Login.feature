@@ -1,4 +1,4 @@
-@login @all
+@login @all @tests
 Feature: Saucedemo - Login Page Tests
 
   Background:
